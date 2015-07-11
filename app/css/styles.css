@@ -1,5 +1,57 @@
 /*something*/
-body h1 {
-  color: #cccccc; }
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, .container {
+  height: 100%; }
+  html img, body img, .container img {
+    width: 100%;
+    height: auto; }
+  html header, body header, .container header {
+    background: green;
+    height: 100px;
+    display: table;
+    width: 100%; }
+    html header .logo, body header .logo, .container header .logo {
+      display: table-cell;
+      width: 15%;
+      background-color: #134eb2; }
+    html header .mast, body header .mast, .container header .mast {
+      display: table-cell;
+      background-color: #f6f3f8;
+      width: 85%; }
+
+.container {
+  display: table;
+  width: 100%;
+  margin-top: -50px;
+  padding-top: 50px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+  /*.col-md-9
+  {
+      display: table-cell;
+      background: blue;
+      width: 75%;
+  }*/ }
+  .container .row {
+    height: 100%;
+    display: table-row; }
+  .container .col-md-2.no-float, .container .col-md-8.no-float {
+    float: none;
+    /* thanks baxabbit */ }
+  .container .col-md-2 {
+    display: table-cell;
+    background: pink;
+    width: 15%; }
+  .container #sidebar {
+    background: #f6f3f8; }
+  .container .col-md-8 {
+    display: table-cell;
+    background: yellow;
+    width: 70%; }
 
 /*# sourceMappingURL=styles.css.map */
