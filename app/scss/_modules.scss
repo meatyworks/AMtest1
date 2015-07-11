@@ -1,0 +1,59 @@
+.logo
+{
+	    display: table-cell;
+  		width: 15%;
+  		background-color: $blue;
+}
+
+.mast
+{
+	    display: table-cell;
+  		background-color: $white;
+  		width: 60%;
+
+}
+
+.reporting
+
+{
+	    display: table-cell;
+  		background-color: $white;
+  		width: 25%;
+
+}
+
+#ef {
+ 
+    }
+
+#main-nav {
+		background: $darkgrey;
+		padding: 0px;
+		.dropdown {
+			.btn.btn-default{
+				width: 100%;
+				border: none;
+				border-radius: 0px;
+				background-color: $darkgrey;
+			}
+		}
+	}
+
+#content {
+		#date-time, #scope {
+		display: block;
+		}
+
+		#graph {
+		
+		}
+	}
+
+#content, #sidebar {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+#sidebar {
+		background: $white;
+}

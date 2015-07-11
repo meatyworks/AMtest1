@@ -1,0 +1,85 @@
+/*something*/
+
+$blue: rgb(19, 78, 178);
+$grey: #cccccc;
+$black: #000000;
+$red: red; 
+
+*
+{
+    margin:0;padding:0;
+}
+
+html,body,.container
+{
+    height:100%;
+
+	header {
+	    background: transparent;
+	    height: 100px;
+		
+
+			.col-md-3
+	{
+	    display: table-cell;
+	    background: $blue;
+	    width: 25%;
+	    height: inherit;
+	}
+
+	.col-md-9
+	{
+	    display: table-cell;
+	    background: blue;
+	    width: 75%;
+   	    height: inherit;
+	}
+
+
+		}
+
+}
+
+
+.container
+{
+    display:table;
+    width: 100%;
+    margin-top: -50px;
+    /* padding-top: 50px; */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-right: 0px; 
+	
+
+	.row
+	{
+	    height: 100%;
+	    display: table-row;
+	}
+	.col-md-3.no-float, .col-md-6.no-float, .col-md-9.no-float  {
+	    float: none; /* thanks baxabbit */
+	}
+	.col-md-3
+	{
+	    display: table-cell;
+	    background: pink;
+	    width: 25%;
+	}
+	.col-md-6
+	{
+	    display: table-cell;
+	    background: yellow;
+	    width: 50%;
+	}
+
+	.col-md-9
+	{
+	    display: table-cell;
+	    background: blue;
+	    width: 75%;
+	}
+}
+
+
