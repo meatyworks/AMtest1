@@ -29,6 +29,8 @@
 #main-nav {
 		background: $darkgrey;
 		padding: 0px;
+		vertical-align: top; 
+
 		.dropdown {
 			.btn.btn-default{
 				width: 100%;
@@ -40,12 +42,43 @@
 	}
 
 #content {
-		#date-time, #scope {
+		#date-time, #explore, #demographic, #scope {
 		display: block;
 		}
 
 		#graph {
-		
+
+		}
+
+		#explore {
+			.nav-tabs {
+			border-bottom: 0px;
+			}
+			.row {
+			display: block;
+			}
+			#explore--item {
+					.item {
+					p {
+						display: inline-flex;
+						margin-bottom: 0px;
+					}
+
+					.progress {
+						  width: 80px;
+						  height: 10px;
+						  display: inline-flex;
+						  margin-bottom: 0px;
+					}
+					.bg-grey {
+						display: inline-flex;
+						p {
+							margin-bottom: 0px;
+
+						}
+					}			
+				}
+			}
 		}
 	}
 
@@ -56,4 +89,25 @@
 
 #sidebar {
 		background: $white;
+		vertical-align: top;
+
+		#scope {
+
+		}
+
+		#parameter {
+			.para-item {
+				p, .progress {
+					display: inline-flex;
+				}
+				.progress {
+					width: 80px;
+  					height: 10px;
+				}
+
+			}
+		}
+
+
+
 }
