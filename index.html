@@ -23,28 +23,25 @@
 
 <header>
  <div class="row">
-  <div class="logo">
+  <div id="logo">
       <img id="ef" src="img/ef.png">
   </div>
 
-  <div class="mast">
-    <h1 class="campaign"><span>Grey Text</span> Name of Campaign <span class="glyphicon glyphicon-play"></span></h1>
+  <div id="mast">
+    <button class="btn btn-default" type="button" id="mobile-menu">
+      <span class="glyphicon glyphicon-align-justify"></span>
+    </button>
+    <h1 class="campaign"><span class="grey">#4386</span> BMW 6 Series <img src="img/live.png" class="live-glyph"></h1>
   </div>
 
-  <div class="reporting">
+  <div id="reporting">
     <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
+               <img src="img/report.png" class="report-glyph"> Report
                 <span class="caret"></span>
               </button>
-              <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
-              </ul> -->
             </div>
-            </div>
+            </div><!--reporting-->
   </div>
 </div>
 </header>
@@ -54,20 +51,20 @@
         <div id="main-nav" class="col-md-2 no-float">
           <div class="dropdown" role="navigation">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Dropdown
+          All Campaigns
           <span class="caret"></span>
           </button>
-          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-          </ul> -->
+          
           <ul id="main-list">
-            <li class="active"><span class="blue glyphicon glyphicon-star"></span> Thing one</li>
-            <li><span class="blue glyphicon glyphicon-star"></span> Thing one</li>
-            <li>Thing one</li>
-            <li>Thing one</li>
+            <li class="active"><span class="blue glyphicon glyphicon-star"></span> #4386 BMW 6 Series <span class="glyphicon glyphicon-remove-sign float-right"></span></li>
+            <li><span class="blue glyphicon glyphicon-star"></span> #4365 Appnexus MRAID</li>
+            <li><span class="blue glyphicon glyphicon-star"></span> #4297 Appnexus 1234 Tests</li>
+            <li><span class="glyphicon glyphicon-star"></span> #4365 MRAID Test Tests</li>
+            <li><span class="glyphicon glyphicon-star"></span> #4215 Appnexus MRAID</li>
+            <li><span class="glyphicon glyphicon-star"></span> #4261 Appnexus MRA</li>
+            <li><span class="glyphicon glyphicon-star"></span> #4365 MRAID Test Tests</li>
+            <li><span class="glyphicon glyphicon-star"></span> #4215 Appnexus MRAID</li>
+            <li><span class="glyphicon glyphicon-star"></span> #4261 Appnexus MRAID Test</li>
           </ul> 
           </div>
 
@@ -78,7 +75,7 @@
             <div id="date-time" class="col-md-12">
               <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
+                <span class="glyphicon glyphicon-calendar"></span> May 12, 2015 - June 19, 2015
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -94,39 +91,44 @@
               <img src="img/graph.png">
             </div><!--#graph-->
 
-              <div class="col-md-4">
-                <p><span class="green glyphicon glyphicon-stop"></span> Impressions</p>
+              <div class="col-xs-4 green-top-border">
+                <p><span class="green glyphicon glyphicon-stop"></span> <strong>Impressions</strong></p>
                 <h3 class="stats">2,088</h3>
               </div>
-              <div class="col-md-4">
-                <p><span class="teal glyphicon glyphicon-stop"></span> Clicks</p>
+              <div class="col-xs-4">
+                <p><span class="teal glyphicon glyphicon-stop"></span> <strong>Clicks</strong></p>
                 <h3 class="stats">397</h3>
               </div>
-              <div class="col-md-4">
-                <p><span class="purple glyphicon glyphicon-stop"></span> CTR</p>
+              <div class="col-xs-4">
+                <p><span class="purple glyphicon glyphicon-stop"></span> <strong>CTR</strong></p>
                 <h3 class="stats">1.45%</h3>
               </div>
 
-            <div id="demographic">
-              <small>Demographic</small>
+            <div id="demographic" class="col-md-12">
+              <small>Gender : <strong>Female</strong> Country : <strong>CANADA, USA</strong> Age : 13-17, 18-24</small>
             </div>
 
             <div id="explore" class="col-md-12">
+              <div id="mobile-rearrange">
               <ul class="nav nav-tabs">
                 <li role="presentation" class="active"><a href="#">
-                  Home</a>
+                  <img src="img/explore.png" class="explore-glyph">
+                  Explore</a>
                 </li>
-                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">
+                  <img src="img/stats.png" class="stats-glyph">
+                  Stats</a></li>
               </ul>
 
-              <div class="row">
-                <div id="explore--item" class="col-md-4">
+            <!-- <div class="row"> -->
+                <div id="explore--item" class="col-xs-4">
                       
                 <div class="item">
                       <strong>Gender</strong>
                       <hr>
+                      <div class="row bg-lightgrey">
                       <span class="glyphicon glyphicon-check"></span> 
-                        <div class="bg-grey">
+                        <div class=" ">
                         <p>Female</p>
                         <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -135,125 +137,331 @@
                         </div>
                         <p>1,088</p>
                       </div>
+                      </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Male </p>
+                      <div class="row">
+                      <p class="grey"><span class="glyphicon glyphicon-unchecked"></span> Male </p>
+                    </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
+                      <div class="row">
+                      <p class="grey"><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
+                    </div>
                     </div>  
                 </div>
 
 
-                <div id="explore--item" class="col-md-4">
+                <div id="explore--item" class="col-xs-4">
                       
                 <div class="item">
-                      <strong>Gender</strong>
+                      <strong>Country</strong>
                       <hr>
+                      <div class="row bg-lightgrey">
                       <span class="glyphicon glyphicon-check"></span> 
-                        <div class="bg-grey">
-                        <p>Female</p>
+                        <div class="">
+                        <p>Canada</p>
                         <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                         </div>
-                        <p>1,088</p>
+                        <p>1,000</p>
+                      </div>
                       </div>
                 </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Male </p>
+                      <div class="row bg-lightgrey">
+                      <span class="glyphicon glyphicon-check"></span> 
+                        <div class="">
+                        <p>USA</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>588</p>
+                      </div>
+                      </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
+                      <p class="grey"><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
                     </div>  
                 </div>
 
-                <div id="explore--item" class="col-md-4">
+                <div id="explore--item" class="col-xs-4">
                       
                 <div class="item">
-                      <strong>Gender</strong>
+                      <strong>Device OS</strong>
                       <hr>
-                      <span class="glyphicon glyphicon-check"></span> 
-                        <div class="bg-grey">
-                        <p>Female</p>
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                        <div class="row">
+                        <p>iOS</p>
                         <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                         </div>
-                        <p>1,088</p>
+                        <p>700</p>
                       </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Male </p>
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                        <div class="row">
+                        <p>Android</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>600</p>
+                      </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                      <div class="row">
+                        <p>Blackberry</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>400</p>
+                      </div>
+                    </div>  
+
+                    <div class="item">
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                      <div class="row">
+                        <p>Unknown</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>388</p>
+                      </div>
                     </div>  
                 </div>
 
-            </div>
-            <div class="row">
-                <div id="explore--item" class="col-md-4">
+            <!-- </div> -->
+            <!-- <div class="row"> -->
+                <div id="explore--item" class="col-xs-4">
                 <div class="item">
-                      <strong>Gender</strong>
+                      <strong>Age</strong>
                       <hr>
+                      <div class="row bg-lightgrey">
                       <span class="glyphicon glyphicon-check"></span> 
-                        <div class="bg-grey">
-                        <p>Female</p>
+                        <div class="">
+                        <p>13-17</p>
                         <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                         </div>
-                        <p>1,088</p>
+                        <p>754</p>
+                      </div>
                       </div>
                     </div>  
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Male </p>
+                      <div class="row bg-lightgrey">
+                       <span class="glyphicon glyphicon-check"></span> 
+                        <div class="">
+                        <p>18-24</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>746</p>
+                      </div>
+                      </div>
                     </div>  
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
+                      <div class="row">
+                      <p class="grey"><span class="glyphicon glyphicon-unchecked"></span> 24-34 </p>
+                    </div>
+                    </div>  
+                    <div class="item">
+                      <div class="row">
+                      <p class="grey"><span class="glyphicon glyphicon-unchecked"></span> 35 + </p>
+                    </div>
                     </div>  
                 </div>
-                <div id="explore--item" class="col-md-4">
+                <div id="explore--item" class="col-xs-4">
                       
                 <div class="item">
-                      <strong>Gender</strong>
+                      <strong>Region</strong>
                       <hr>
-                      <span class="glyphicon glyphicon-check"></span> 
-                        <div class="bg-grey">
-                        <p>Female</p>
+                      <div class="row">
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                        <p>ON</p>
                         <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                         </div>
-                        <p>1,088</p>
+                        <p>790</p>
                       </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Male </p>
+                      <div class="row">
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                        <p>BC</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>510</p>
+                      </div>
                     </div>  
 
                     <div class="item">
-                      <p><span class="glyphicon glyphicon-unchecked"></span> Unknown </p>
+                      <div class="row">
+                      <span class="glyphicon glyphicon-unchecked"></span> 
+                        <p>Unknown</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                        </div>
+                        <p>500</p>
+                      </div>
                     </div>  
                 </div>
 
-                <div id="explore--item" class="col-md-4">                      
-                <img src="img/dayparts.png"> 
+                <div id="explore--item" class="col-xs-4"> 
+                <strong>Dayparts &amp; Weekparts</strong>
+                <hr>              
+                <img src="img/dayparts.png" id="dayparts"> 
                 </div>
 
+            </div><!--#mobile-rearrange-->
+
+            <div id="sidebar-mobile" class="col-md-3 no-float">
+              <div id="scope" class="col-md-12">
+              <div class="btn-group clearfix" role="group" aria-label="...">
+                <button type="button" class="btn btn-default scope-btn">Scope </button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></button>
+              </div>
             </div>
+
+            <div id="parameter" class="col-md-12">
+                <div class="para-item">
+                  <p><strong>Creative</strong></p>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Creative1</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>600</p>
+                </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Creative2</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>600</p>
+                  </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Creative3</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>600</p>
+                  </div>
+                </div>
+                  <hr>
+
+                <div class="para-item">
+                  <p><strong>Flight</strong></p>
+                  <div class="row">
+                  <div class="bg-lightgrey">
+                  <span class="glyphicon glyphicon-check"></span>
+                  <p>Father’s day</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>600</p>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked grey"></span>
+                  <p class="grey">Mother’s day</p>
+                  </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked grey"></span>
+                  <p class="grey">Canada day</p>
+                  </div>
+                </div>
+                  <hr>
+
+                <div class="para-item">
+                  <p><strong>Geotarget</strong></p>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Geo 1</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>500</p>
+                  </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Geo 2</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>400</p>
+                  </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Geo 3</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>300</p>
+                  </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Geo 4</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>200</p>
+                  </div>
+                  <hr>
+                </div>
+            </div>
+
+        </div><!--#sidebar-->
 
             </div><!--#explore-->
 
@@ -262,19 +470,28 @@
 
         <div id="sidebar" class="col-md-3 no-float">
               <div id="scope" class="col-md-12">
-              <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">Scope</button>
+              <div class="btn-group clearfix" role="group" aria-label="...">
+                <button type="button" class="btn btn-default scope-btn">Scope </button>
                 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></button>
               </div>
             </div>
 
             <div id="parameter" class="col-md-12">
                 <div class="para-item">
-                  <p>Creative</p>
-                  <hr>
+                  <p><strong>Creative</strong></p>
                   <div class="row">
                   <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
+                  <p>Creative1</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>600</p>
+                </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Creative2</p>
                   <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
@@ -284,17 +501,7 @@
                   </div>
                   <div class="row">
                   <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
-                  <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                  </div>
-                  <p>600</p>
-                  </div>
-                  <div class="row">
-                  <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
+                  <p>Creative3</p>
                   <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
@@ -303,12 +510,14 @@
                   <p>600</p>
                   </div>
                 </div>
-                <div class="para-item">
-                  <p>Flight</p>
                   <hr>
+
+                <div class="para-item">
+                  <p><strong>Flight</strong></p>
                   <div class="row">
-                  <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
+                  <div class="bg-lightgrey">
+                  <span class="glyphicon glyphicon-check"></span>
+                  <p>Father’s day</p>
                   <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
@@ -316,60 +525,61 @@
                   </div>
                   <p>600</p>
                   </div>
-                  <div class="row">
-                  <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
-                  <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                  </div>
-                  <p>600</p>
                   </div>
                   <div class="row">
-                  <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
-                  <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
+                  <span class="glyphicon glyphicon-unchecked grey"></span>
+                  <p class="grey">Mother’s day</p>
                   </div>
-                  <p>600</p>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked grey"></span>
+                  <p class="grey">Canada day</p>
                   </div>
                 </div>
-                <div class="para-item">
-                  <p>Geotarget</p>
                   <hr>
+
+                <div class="para-item">
+                  <p><strong>Geotarget</strong></p>
                   <div class="row">
                   <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
+                  <p>Geo 1</p>
                   <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                   </div>
-                  <p>600</p>
+                  <p>500</p>
                   </div>
                   <div class="row">
                   <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
+                  <p>Geo 2</p>
                   <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                   </div>
-                  <p>600</p>
+                  <p>400</p>
                   </div>
                   <div class="row">
                   <span class="glyphicon glyphicon-unchecked"></span>
-                  <p>Creative</p>
+                  <p>Geo 3</p>
                   <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                           <span class="sr-only">60% Complete</span>
                         </div>
                   </div>
-                  <p>600</p>
+                  <p>300</p>
                   </div>
+                  <div class="row">
+                  <span class="glyphicon glyphicon-unchecked"></span>
+                  <p>Geo 4</p>
+                  <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                  </div>
+                  <p>200</p>
+                  </div>
+                  <hr>
                 </div>
             </div>
 
