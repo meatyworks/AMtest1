@@ -1,5 +1,5 @@
 $blue: #1565c0;
-$grey: #eeeeee;
+$grey: #a6aaa9;
 $darkgrey: #353a44;
 $black: #000000;
 $white: #fafafa;
@@ -8,7 +8,7 @@ $textgrey: #5c6169;
 $green: #cdde4a;
 $teal: #4db6ad;
 $purple: #aa38ff;
-
+$lightgrey: #eeeeee;
 
 .blue {
 	color: $blue;
@@ -16,6 +16,10 @@ $purple: #aa38ff;
 
 .bg-grey {
 	background-color: $grey;
+}
+
+.bg-lightgrey {
+	background-color: $lightgrey;
 }
 
 .green {
@@ -28,4 +32,12 @@ $purple: #aa38ff;
 
 .purple {
 	color: $purple;
+}
+
+.darkgrey {
+	color: $darkgrey;
+}
+
+.grey {
+	color: $grey;
 }

@@ -15,7 +15,7 @@ html,body,.container {
 
 	header {
 
-	    background: green;
+	    background: transparent;
 	    height: auto;
 	    display: table;
   		width: 100%;
@@ -71,3 +71,4 @@ html,body,.container {
 @import "colours";
 @import "typography";
 @import "modules";
+@import "breakpoints";

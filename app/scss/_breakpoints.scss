@@ -1,0 +1,27 @@
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	#main-nav, #logo {
+		display: none; 
+	}
+
+	#mobile-menu {
+		display: block !important;
+	}
+
+	#mast {
+		width: 80%;
+	}
+
+	#sidebar {
+		
+	}
+
+	.container {
+		.row {
+			.col-md-7 {
+				width: 80%;
+			}
+		}
+	}
+}
