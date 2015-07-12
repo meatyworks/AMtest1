@@ -9,18 +9,93 @@
 		display: block !important;
 	}
 
+	#reporting {
+		width: 30%;
+		padding-bottom: 30px;
+		vertical-align: bottom;
+		.btn {
+			width: 100%;
+		}
+		.dropdown {
+			margin-right: 25px;
+		}
+	}
+
 	#mast {
-		width: 80%;
+		padding-top:30px;
+		padding-bottom: 30px;
+		width: 70%;
 	}
 
 	#sidebar {
+		display: none;
+	}
+
+	#sidebar-mobile {
+		display: inline-block !important;
+		background: $white;
+		vertical-align: top;
+
+		#scope {
+
 		
+		padding-left: 0px; 
+		
+		.btn-group {
+			display: block;
+			.scope-btn {
+				width: 75%;
+			}
+		}
+		}
+
+		#parameter {
+			.para-item {
+				margin-left: 15px;
+				font-size: 12px; 
+
+				p, .progress {
+					display: inline-flex;
+					display: inline-block;
+				}
+				.progress {
+					width: 45px;
+  					height: 10px;
+  					margin-bottom:0px;
+  					border-radius: 0px;
+  					margin-left: 5px;
+				}
+				.row {
+					margin-bottom: 10px;
+					p {
+						margin-bottom: 0px; 
+					}
+					span {
+						margin-left: 0px; 
+					}
+				}
+
+			}
+		}
+}
+
+	#content {
+		#explore { 
+		#explore--item {
+			max-width: 33%;
+			}
+		}
 	}
 
 	.container {
+	    margin-top: 15px;
+
 		.row {
 			.col-md-7 {
-				width: 80%;
+				width: 100%;
+			}
+			.col-md-3 {
+				width: 30%;
 			}
 		}
 	}
